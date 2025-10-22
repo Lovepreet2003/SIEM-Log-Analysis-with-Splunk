@@ -45,114 +45,44 @@ You will learn how to ingest logs, write **SPL (Search Processing Language)** qu
 
 ---
 
-## 🧩 Step 1 — Install and Configure Splunk
+## 🌐 Project Background
 
-### 🎯 Objective
-The objective of this task is to help students **install and configure Splunk on an Ubuntu machine**.  
-By completing this task, you will have **Splunk up and running** to collect and analyze security logs.
+In modern cybersecurity operations, **log analysis and threat detection** are the backbone of proactive defense. Every endpoint, network device, and application generates logs that hold valuable insights about potential security events.  
+However, manually reviewing these logs is inefficient and prone to human error — that’s where **SIEM (Security Information and Event Management)** tools like **Splunk** become essential.
 
-### 🖥️ Lab Setup
+**Splunk** enables security teams to:
+- Collect and centralize logs from multiple data sources.
+- Parse and normalize data for uniform analysis.
+- Correlate seemingly unrelated events.
+- Detect malicious behavior through pattern recognition and automation.
+- Visualize and report incidents through interactive dashboards.
 
-**Requirements**
-- System: Ubuntu 22.04 / 20.04 (Server or Desktop)  
-- Tools: Splunk Enterprise (Free version), Terminal access
-
----
-
-### ⚙️ Steps to Install and Configure Splunk
-
-#### Step 1: Download Splunk
-Open Terminal and download Splunk using:
-
-```bash
-wget -O splunk-9.3.0-51ccf43db5bd-linux-2.6-amd64.deb "https://download.splunk.com/products/splunk/releases/9.3.0/linux/splunk-9.3.0-51ccf43db5bd-linux-2.6-amd64.deb"
-```
-Once the file is downloaded, verify it with:
-```
-ls -lh splunk-9.3.0-51ccf43db5bd-linux-2.6-amd64.deb
-```
-
-Then install Splunk using dpkg:
-```
-sudo dpkg -i splunk-9.3.0-51ccf43db5bd-linux-2.6-amd64.deb
-```
-
-⚠️ Note: If any dependency issues occur, fix them with:
-```
-sudo apt --fix-broken install
-```
-#### Step 2: Enable Splunk as a Service
-
-Move to the Splunk installation directory:
-```
-cd /opt/splunk/bin
-
-```
-Accept the license agreement and enable Splunk to start automatically when the system boots:
-```
-sudo ./splunk enable boot-start --accept-license
-
-```
-Now, start the Splunk service:
-```
-sudo ./splunk start
-```
-<br>
+By mastering Splunk, you gain the ability to think and operate like a **SOC (Security Operations Center) Analyst**, turning raw data into actionable intelligence.
 
 ---
 
-## 🌐 Access Splunk Web Interface
+## 🧩 Project Workflow Overview
 
-Once Splunk is running, open your web browser and navigate to:
-```
-http://<your-server-ip>:8000
-```
+This Splunk SIEM project is designed as a step-by-step practical lab series that mirrors real-world security monitoring tasks.  
+Each phase of the project builds on the previous one, taking you from environment setup to complex log correlation and investigation.
 
-Example for local systems:
-```
-http://localhost:8000
-```
-
-Log in using the admin credentials you just created.
-
-You should see the Splunk Web Dashboard, which allows you to search, add data, and configure your Splunk instance.
-
-<br>
-
+| Step | Focus Area | Description |
+|------|-------------|-------------|
+| **Step 1** | Splunk Installation & Configuration | Set up Splunk on Ubuntu and prepare it for data ingestion. |
+| **Step 2** | DNS Log Analysis | Ingest and analyze DNS logs to identify suspicious domains and query patterns. |
+| **Step 3** | SSH Log Analysis | Detect failed logins, brute-force attempts, and unauthorized SSH activity. |
+| **Step 4** | HTTP Log Analysis | Examine web server logs to find anomalies, large file transfers, and possible attacks. |
+| **Step 5** | Investigation & Correlation | Combine multi-log insights to investigate unauthorized access and potential compromise. |
 
 ---
 
 
-## 🧩 Verify Splunk Installation
+## 🚀 What’s Next?
 
-After logging into Splunk Web, verify that Splunk is indexing internal logs correctly.
+With the foundation established, the next section — **Step 1: Install and Configure Splunk** — will walk you through setting up Splunk Enterprise on Ubuntu and preparing it to ingest security logs.
 
-Go to Search & Reporting and run this SPL query:
-```
-index=_internal | stats count
-```
+👉 Continue to [Step 1 — Install and Configure Splunk](Step1_Install_and_Configure_Splunk.md)
 
-If you receive a non-zero count, Splunk is working properly 🎉
+---
 
-## Manage Splunk Service (Optional Commands)
-
-Start Splunk manually:
-```
-sudo /opt/splunk/bin/splunk start
-```
-
-Stop Splunk:
-```
-sudo /opt/splunk/bin/splunk stop
-```
-
-Restart Splunk:
-```
-sudo /opt/splunk/bin/splunk restart
-```
-
-Check Splunk status:
-```
-sudo /opt/splunk/bin/splunk status
-```
 
