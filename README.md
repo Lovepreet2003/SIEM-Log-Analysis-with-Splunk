@@ -7,20 +7,19 @@
 ---
 
 ## 📘 Table of Contents
-1. [Project Overview](#project-overview)
-2. [Learning Objectives](#learning-objectives)
-3. [Tools & Setup](#tools--setup)
-4. [Step 1 — Install and Configure Splunk](#step-1--install-and-configure-splunk)
-5. [Step 2 — DNS Log Analysis](#step-2--dns-log-analysis)
-6. [Step 3 — SSH Log Analysis](#step-3--ssh-log-analysis)
-7. [Step 4 — HTTP Log Analysis](#step-4--http-log-analysis)
-8. [Step 5 — Investigating Unauthorized Access](#step-5--investigating-unauthorized-access)
-9. [Results and Screenshots](#results-and-screenshots)
-10. [Author & Credits](#author--credits)
+1. [Project Overview]
+2. [Learning Objectives]
+3. [Tools & Setup]
+4. [Step 1 — Install and Configure Splunk]
+5. [Step 2 — DNS Log Analysis]
+6. [Step 3 — SSH Log Analysis]
+7. [Step 4 — HTTP Log Analysis]
+8. [Step 5 — Investigating Unauthorized Access]
+9. [Results and Screenshots]
 
 ---
 
-## 🧠 Project Overview
+## 🧠 Project-Overview
 This project focuses on building a **SIEM environment using Splunk** to perform practical log analysis and security monitoring.  
 You will learn how to ingest logs, write **SPL (Search Processing Language)** queries, and identify security events such as brute-force attacks, server errors, and unauthorized access.
 
@@ -81,7 +80,7 @@ Each phase of the project builds on the previous one, taking you from environmen
 
 With the foundation established, the next section — **Step 1: Install and Configure Splunk** — will walk you through setting up Splunk Enterprise on Ubuntu and preparing it to ingest security logs.
 
-👉 Continue to [Step 1 — Install and Configure Splunk](Step1_Install_and_Configure_Splunk.md)
+👉 Continue to [Step 1 — Install and Configure Splunk](Step1-Install_and_Configure_Splunk.md)
 
 ---
 
