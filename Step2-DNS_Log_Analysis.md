@@ -62,4 +62,4 @@ Now that Splunk is installed and configured successfully, the next section — *
 
 You’ll learn how to extract fields, identify the most active source IPs, detect failed and successful login attempts, and spot unusual SSH activity that could indicate malicious behavior.  
 
-👉 **Continue to Step 3 — SSH_Log_Analysis**
+👉 **Continue to [Step 3 — SSH_Log_Analysis](Step3-SSH_Log_Analysis.md)
