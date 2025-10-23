@@ -21,11 +21,17 @@ Submit your answers along with screenshots from your Splunk queries.
 ### Question 1:  
 What is the total number of success events in this log file?  
 
+![RESULT](https://github.com/Lovepreet2003/SIEM-Log-Analysis-with-Splunk/blob/main/screenshot/10.png?raw=true)
+
 ### Question 2:  
 What is the most common event triggered and captured in this log file?  
 
+![RESULT](https://github.com/Lovepreet2003/SIEM-Log-Analysis-with-Splunk/blob/main/screenshot/11.png?raw=true)
+
 ### Question 3:  
 If a user with a `uid` 1010 tried accessing a Linux server, what is the logfile path accessed by him twice?  
+
+![RESULT](https://github.com/Lovepreet2003/SIEM-Log-Analysis-with-Splunk/blob/main/screenshot/12.png?raw=true)
 
 ---
 
