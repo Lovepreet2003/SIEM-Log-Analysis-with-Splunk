@@ -12,7 +12,7 @@ In this lab, you will:
 - **Data Source:** JSON-formatted Zeek-style HTTP logs.  
 
 **Sample Log File:**  
-Download the file: [HTTP log file](https://github.com/Lovepreet2003/SIEM-Log-Analysis-with-Splunk/blob/main/sample_files/HTTP_logs.json) and upload it to Splunk.  
+Download the file: [HTTP log file](https://github.com/Lovepreet2003/SIEM-Log-Analysis-with-Splunk/blob/main/sample_files/http_logs.json) and upload it to Splunk.  
 
 ## ⚙️ Steps to Upload HTTP Log into Splunk  
 
