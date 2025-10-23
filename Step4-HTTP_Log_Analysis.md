@@ -12,12 +12,12 @@ In this lab, you will:
 - **Data Source:** JSON-formatted Zeek-style HTTP logs.  
 
 **Sample Log File:**  
-Download the file: `synthetic_zeek_http.json` and upload it to Splunk.  
+Download the file: [HTTP_log_file](https://github.com/Lovepreet2003/SIEM-Log-Analysis-with-Splunk/blob/main/sample_files/HTTP_log_file) and upload it to Splunk.  
 
 ## ⚙️ Steps to Upload HTTP Log into Splunk  
 
 1. Go to **Splunk Web → Settings → Add Data**.  
-2. Choose **Upload** and select `synthetic_zeek_http.json`.  
+2. Choose **Upload** and select `HTTP_log_file`.  
 3. Set **Source type**: `json` or create a new one `zeek:http`.  
 4. Select **Index**: Choose `main` or create a new index `http_lab`.  
 5. Finish the upload and confirm indexing.  
@@ -35,6 +35,8 @@ index=http_lab sourcetype="json"
 | head 10
 ```
 RESULT:
+![HTTP Log Analysis Screenshot](https://github.com/Lovepreet2003/SIEM-Log-Analysis-with-Splunk/blob/main/screenshot/7.png?raw=true)
+
 
 ### ✅ Task 2: Count the number of server errors (5xx) observed
 
@@ -43,6 +45,9 @@ index=http_lab sourcetype="json" status_code>=500 status_code<600
 | stats count as server_errors
 ```
 RESULT:
+![SSH Log Analysis Screenshot](https://github.com/Lovepreet2003/SIEM-Log-Analysis-with-Splunk/blob/main/screenshot/8.png?raw=true)
+
+
 
 ### ✅ Task 3: Identify User-Agents associated with possible scripted attacks
 
@@ -51,6 +56,8 @@ index=http_lab sourcetype="json" user_agent IN ("sqlmap/1.5.1", "curl/7.68.0", "
 | stats count by user_agent
 ```
 RESULT:
+![SSH Log Analysis Screenshot](https://github.com/Lovepreet2003/SIEM-Log-Analysis-with-Splunk/blob/main/screenshot/9.png?raw=true)
+
 
 
 🚀 **What’s Next?**  
