@@ -12,12 +12,12 @@ In this lab, you will:
 - **Data Source:** JSON-formatted Zeek-style HTTP logs.  
 
 **Sample Log File:**  
-Download the file: [HTTP_log_file](https://github.com/Lovepreet2003/SIEM-Log-Analysis-with-Splunk/blob/main/sample_files/HTTP_log_file) and upload it to Splunk.  
+Download the file: [HTTP log file](https://github.com/Lovepreet2003/SIEM-Log-Analysis-with-Splunk/blob/main/sample_files/HTTP_logs.json) and upload it to Splunk.  
 
 ## ⚙️ Steps to Upload HTTP Log into Splunk  
 
 1. Go to **Splunk Web → Settings → Add Data**.  
-2. Choose **Upload** and select `HTTP_log_file`.  
+2. Choose **Upload** and select `HTTP log file`.  
 3. Set **Source type**: `json` or create a new one `zeek:http`.  
 4. Select **Index**: Choose `main` or create a new index `http_lab`.  
 5. Finish the upload and confirm indexing.  
