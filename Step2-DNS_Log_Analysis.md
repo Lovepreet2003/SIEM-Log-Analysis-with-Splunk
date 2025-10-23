@@ -34,7 +34,7 @@ index=dns_lab sourcetype="json"
 | sort -count
 ```
 #### RESULT:
-
+[](SIEM-Log-Analysis-with-Splunk/screenshot/1.png)
 
 ### Task 2: Find the most active user IPs generating DNS traffic
 
@@ -45,7 +45,7 @@ index=dns_lab sourcetype="json"
 | sort -count
 ```
 #### RESULT:
-
+(2.png)
 
 ### Task 3: Breakdown of DNS query types (A, AAAA, CNAME, PTR)
 
@@ -55,7 +55,7 @@ index=dns_lab sourcetype="json"
 | stats count by qtype
 ```
 #### RESULT:
-
+(3.png)
 
 🚀 **What’s Next?**  
 Now that Splunk is installed and configured successfully, the next section — **Step 2: SSH Log Analysis** — will guide you through ingesting SSH logs into Splunk and analyzing them using SPL (Search Processing Language).  
