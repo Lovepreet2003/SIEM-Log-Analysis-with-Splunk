@@ -12,12 +12,12 @@ In this lab, you will:
 - **Data Source:** JSON-formatted Zeek DNS logs.  
 
 **Sample Log File:**  
-Download the file: `dns.log` and place it in a directory accessible to Splunk for ingestion.  
+Download the file: [dns log file](https://github.com/Lovepreet2003/SIEM-Log-Analysis-with-Splunk/blob/main/sample_files/dns_logs.json) and place it in a directory accessible to Splunk for ingestion.  
 
 ## ⚙️ Steps to Upload DNS Log into Splunk  
 
 1. Go to **Splunk Web → Settings → Add Data**.  
-2. Choose **Upload** and select the file `dns.log`.  
+2. Choose **Upload** and select the file `dns log file`.  
 3. Set **Source type**: `json` or create a custom source type `dns`.  
 4. Select **Index**: Choose `main` or create a new index `dns_lab`.  
 5. Finish the upload and confirm indexing.  
