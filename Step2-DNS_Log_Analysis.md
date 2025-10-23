@@ -33,8 +33,8 @@ index=dns_lab sourcetype="json"
 | stats count by query
 | sort -count
 ```
-#### RESULT:
-[](SIEM-Log-Analysis-with-Splunk/screenshot/1.png)
+
+[#### RESULT:](SIEM-Log-Analysis-with-Splunk/screenshot/1.png)
 
 ### Task 2: Find the most active user IPs generating DNS traffic
 
