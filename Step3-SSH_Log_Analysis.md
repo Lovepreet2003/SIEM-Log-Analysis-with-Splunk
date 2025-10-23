@@ -17,7 +17,7 @@ Download the file: `synthetic_zeek_ssh.json` and upload it to Splunk.
 ## ⚙️ Steps to Upload SSH Log into Splunk  
 
 1. Go to **Splunk Web → Settings → Add Data**.  
-2. Choose **Upload** and select `synthetic_zeek_ssh.json`.  
+2. Choose **Upload** and select `SSH_logs`.  
 3. Set **Source type**: `json` or create a new one `zeek:ssh`.  
 4. Select **Index**: Choose `main` or create a new index `ssh_lab`.  
 5. Finish the upload and confirm indexing.  
@@ -35,6 +35,7 @@ index=ssh_lab sourcetype="json" auth_success=false
 | head 10
 ```
 ### RESULT:
+![SSH Log Analysis Screenshot](https://github.com/Lovepreet2003/SIEM-Log-Analysis-with-Splunk/blob/main/screenshot/4.png?raw=true)
 
 
 ###  Task 2: Find the number of total SSH connections
@@ -44,6 +45,8 @@ index=ssh_lab sourcetype="json"
 | stats count as total_ssh_connections
 ```
 ### RESULT:
+![SSH Log Analysis Screenshot](https://github.com/Lovepreet2003/SIEM-Log-Analysis-with-Splunk/blob/main/screenshot/5.png?raw=true)
+
 
 
 ###  Task 3: Count all event types (successful, failed, no-auth, multiple-failed)
@@ -53,6 +56,8 @@ index=ssh_lab sourcetype="json"
 | stats count by event_type
 ```
 ### RESULT:
+![SSH Log Analysis Screenshot](https://github.com/Lovepreet2003/SIEM-Log-Analysis-with-Splunk/blob/main/screenshot/6.png?raw=true)
+
 
 
 ---
