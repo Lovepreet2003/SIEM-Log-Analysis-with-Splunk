@@ -12,12 +12,12 @@ In this lab, you will:
 - **Data Source:** JSON-formatted Zeek-style SSH logs.  
 
 **Sample Log File:**  
-Download the file: `synthetic_zeek_ssh.json` and upload it to Splunk.  
+Download the file: [SSH log file](https://github.com/Lovepreet2003/SIEM-Log-Analysis-with-Splunk/blob/main/sample_file/ssh_logs.json) and upload it to Splunk.  
 
 ## ⚙️ Steps to Upload SSH Log into Splunk  
 
 1. Go to **Splunk Web → Settings → Add Data**.  
-2. Choose **Upload** and select `SSH_logs`.  
+2. Choose **Upload** and select `SSH log file`.  
 3. Set **Source type**: `json` or create a new one `zeek:ssh`.  
 4. Select **Index**: Choose `main` or create a new index `ssh_lab`.  
 5. Finish the upload and confirm indexing.  
